@@ -7,8 +7,6 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 const fs = require('fs');
 
-
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
